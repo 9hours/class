@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Montserrat', sans-serif;
+
+  background: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+  color: #4702cc;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+
+nav li, #instructions li, #prev, #next, #prev2, #next2, .steps, .steps2, a {
+  cursor: pointer;
+  color: inherit;
+  transition: all 0.5s ease-in-out;
+}
+
+nav li:hover, #instructions li:hover, #prev:hover, #next:hover, #prev2:hover, #next2:hover, a:hover {
+  color: white;
+}
+
+main {
+  height: 350px;
+  width: 600px;
+  margin:auto;
+  position: relative;
+  top: 150px;
+}
+
+article {
+  height: 100%;
+  width: 100%;
+  background-color: #fd868c;
+  box-shadow: 0px 10px 15px #ad2747;
+  border-radius: 5px;
+  padding: 20px;
+  position: absolute;
+}
+
+#start {
+  display: block;
+}
+
+#history, #keyboards, .container, .slides, .slides2, #why, #instructions {
+  display: none;
+}
+
+h1 {
+  position: absolute;
+}
+
+#start section, #history section, .concept {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  background-color: antiquewhite;
+  position: absolute;
+}
+
+.container {
+  height: calc(100% - 50px);
+  width: 100%;
+  border:1px solid black;
+  position: relative;
+}
+
+.container > div {
+  height: 100%;
+  width:100%;
+  background-color:white;
+  border:1px solid blue;
+  position: absolute;
+}
+
+#prev, #next, #prev2, #next2 {
+  color: black;
+  padding: 20px;
+  color: white;
+  position: absolute;
+  font-size: 40px;
+  bottom: 37%;
+}
+
+#prev, #prev2 {
+  left: -90px;
+}
+
+#next, #next2 {
+  right: -90px;
+}
+
+
+.steps, .steps2 {
+  border: 1px solid black;
+  margin-top: 350px;
+  text-transform: uppercase;
+}
+
+h4 {
+  cursor: default;
+  float: left;
+  border: 1px solid black;
+  padding: 8px 7px 0px 7px;
+}
+
+.dot, .dot2 {
+  display: inline-block;
+  padding: 10px 10px 5px 10px;
+  color: #dd5475;
+  text-align: center;
+  width: 30px;
+}
+
+.active, .dot:hover, .dot2:hover {
+  border-bottom: 3px solid #4702cc;
+  color: #4702cc;
+}
+
+.container p {
+  float:left;
+  height: 100%;
+  width: 60%;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+.container figure {
+  float:left;
+  height: 100%;
+  width: 39%;
+  background-color: antiquewhite;
+  border: 1px solid black;
+}
+
+#title a, #why a {
+  position: absolute;
+  top: 50px;
+}
