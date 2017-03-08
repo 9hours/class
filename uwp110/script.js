@@ -21,10 +21,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //side links
     navlinks[2].addEventListener('click', showHistory);
 
+    //refresh button
+    navlinks[3].addEventListener('click', function(){
+      location.reload();
+    });
+
     //from start
-    navlinks[3].addEventListener('click', showKeyboards);
+    navlinks[4].addEventListener('click', showKeyboards);
     //from start
-    navlinks[4].addEventListener('click', showHistory);
+    navlinks[5].addEventListener('click', showHistory);
 
     function showKeyboards () {
       start.style.display = "none";
@@ -129,7 +134,6 @@ document.getElementById('next2').onclick = function() {plusSlides2(1)};
 
 document.getElementsByClassName('dot2')[0].onclick = function() {currentSlide2(1)};
 document.getElementsByClassName('dot2')[1].onclick = function() {currentSlide2(2)};
-document.getElementsByClassName('dot2')[2].onclick = function() {currentSlide2(3)};
 
 //defined the value of slideIndex
 var slideIndex2 = 1;

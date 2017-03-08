@@ -21,27 +21,28 @@
 
     <nav>
         <ul>
-            <li>start</li>
+            <li>opening</li>
             <li>keyboards</li>
             <li>history</li>
+            <li>refresh</li>
         </ul>
     </nav>
 
     <main>
         <article id="start">
             <section id="title">
-                <h1>let's make photoshop easy!</h1>
-                <a class="nextButton">let's start</a>
+                <h1>Making Photoshop a little more bearable<br> <span>for you</span></h1>
+                <a class="nextButton">Let's Start!</a>
             </section>
 
-            <section id="why">
+            <section id="why" class="concept">
                 <h2>the reasons why I want to use</h2>
                 <p>this is a paragraph</p>
-                <a class="nextButton">let's start</a>
+                <a class="nextButton">Let's Start!</a>
             </section>
 
             <section id="instructions">
-                <h2>list of instructions?</h2>
+                <h2>TASKS</h2>
                 <ul>
                     <li>change keyboard shortcuts</li>
                     <li>increase history states</li>
@@ -55,35 +56,48 @@
             <section class="concept">
                 <h2>why change the keyboard settings?</h2>
                 <p>this is a paragraph</p>
-                <a class="nextSlides">let's start</a>
+                <a class="nextSlides">Let's Start!</a>
             </section>
 
             <section class="container">
                 <!-- ONE SLIDE -->
                 <div class="slides">
                     <!-- STEP -->
-                    <h5>STEP 1</h5>
-                    <!-- <img src="gif"> -->
-                    <p></p>
-                    <figure></figure>
+                    <h3>STEP 1</h3>
+                    <p>MENU > EDIT
+                        <br> Go all the way down to <em>Keyboard Shortcuts...</em></p>
+                    <figure>
+                        <img src="images/toGIF_1.gif" alt="step 1" height="310px">
+                    </figure>
                 </div>
 
                 <!-- TWO SLIDE -->
                 <div class="slides">
                     <!-- STEP -->
-                    <h5>STEP 2</h5>
-                    <!-- <img src="gif"> -->
-                    <p></p>
-                    <figure></figure>
+                    <h3>STEP 2</h3>
+                    <p>A panel will open up now.
+                        <br> make sure the keyboard shortcuts tab is selected.
+                        <br> Under the application menu command, find and click on EDIT
+                    </p>
+                    <figure>
+                        <img src="images/toGIF_2.gif" alt="step 2" height="310px">
+                    </figure>
                 </div>
 
                 <!-- THREE SLIDE -->
                 <div class="slides">
                     <!-- STEP -->
-                    <h5>STEP 3</h5>
-                    <!-- <img src="gif"> -->
-                    <p></p>
-                    <figure></figure>
+                    <h3>STEP 3</h3>
+                    <p>the EDIT drop down will open, you'll see keyboard shortcut names such as UNDO.
+                        <!--<br> we will ignore the UNDO command
+                        <br> and-->
+                        <br><br>go to STEP BACKWARD. next to it is the corresponding shortcut. click on it and now enter the desired shortcut command.
+                        <br><br> in the example I simply used CMD+Z (MAC).
+                        <br><br> press accept, then okay, and now you're set! (or you can bypass this by just pressing ENTER on your keyboard).
+                    </p>
+                    <figure>
+                        <img src="images/toGIF_3.gif" alt="step 3" height="310px">
+                    </figure>
                 </div>
 
                 <a id="prev">&#10094;</a>
@@ -91,9 +105,9 @@
 
                 <ul class="steps">
                     <h4>steps</h4>
-                    <li class="dot" onclick="currentSlide(1)">1</li>
-                    <li class="dot" onclick="currentSlide(2)">2</li>
-                    <li class="dot" onclick="currentSlide(3)">3</li>
+                    <li class="dot">1</li>
+                    <li class="dot">2</li>
+                    <li class="dot">3</li>
                 </ul>
             </section>
 
@@ -111,45 +125,44 @@
                 <h2>why change the history states?</h2>
                 <p></p>
 
-                <a class="nextSlides">let's start</a>
+                <a class="nextSlides">Let's Start!</a>
             </section>
 
             <section class="container">
                 <!-- ONE SLIDE -->
                 <div class="slides2">
                     <!-- STEP -->
-                    <h5>STEP 1</h5>
-                    <!-- <img src="gif"> -->
-                    <p></p>
-                    <figure></figure>
+                    <h3>STEP 1</h3>
+                    <p>IN MACS: go to PHOTOSHOP > Preferences > General
+                        <br> IN PC: go to EDIT > PREFERENCES > GENERAL
+                    </p>
+                    <figure>
+                        <img src="images/toGIF_5.gif" alt="step 5" height="310px">
+                    </figure>
                 </div>
 
                 <!-- TWO SLIDE -->
                 <div class="slides2">
                     <!-- STEP -->
-                    <h5>STEP 2</h5>
-                    <!-- <img src="gif"> -->
-                    <p></p>
-                    <figure></figure>
+                    <h3>STEP 2</h3>
+                    <p>Another panel will pop up.
+                        <br> On the right hand side, find and click on PERFORMANCE.
+                        <br> Go to History States and increase the number to any amount, I went with 100.
+                        <br> then click okay.
+                    </p>
+                    <figure>
+                        <img src="images/toGIF_6.gif" alt="step 6" height="310px">
+                    </figure>
                 </div>
 
-                <!-- THREE SLIDE -->
-                <div class="slides2">
-                    <!-- STEP -->
-                    <h5>STEP 3</h5>
-                    <!-- <img src="gif"> -->
-                    <p></p>
-                    <figure></figure>
-                </div>
 
                 <a id="prev2">&#10094;</a>
                 <a id="next2">&#10095;</a>
 
                 <ul class="steps2">
                     <h4>steps</h4>
-                    <li class="dot2" onclick="currentSlide(1)">1</li>
-                    <li class="dot2" onclick="currentSlide(2)">2</li>
-                    <li class="dot2" onclick="currentSlide(3)">3</li>
+                    <li class="dot2">1</li>
+                    <li class="dot2">2</li>
                 </ul>
             </section>
         </article>
