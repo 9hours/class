@@ -48,6 +48,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //START links
     var why = document.getElementById('why');
     var instructions = document.getElementById('instructions');
+    var concept = document.getElementsByClassName('concept');
+    var moreInfo = document.getElementById('moreInfo');
       var nextButton = document.getElementsByClassName('nextButton');
 
     nextButton[0].addEventListener('click', function(){
@@ -57,6 +59,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     nextButton[1].addEventListener('click', function(){
       instructions.style.display = 'block';
+    });
+
+    nextButton[2].addEventListener('click', function(){
+      concept[3].style.display = 'block';
     });
 
     ///

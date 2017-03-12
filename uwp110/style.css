@@ -61,12 +61,16 @@ article {
   display: block;
 }
 
-#history, #keyboards, .container, .slides, .slides2, #why, #instructions {
+#history, #keyboards, .container, .slides, .slides2, #why, #instructions, #moreInfo {
   display: none;
 }
 
-h1, #instructions li, .steps, .steps2, .nextButton, .nextSlides {
+h1, h2, h3, h4, h5, #instructions li, .steps, .steps2, .nextButton, .nextSlides {
   text-transform: uppercase;
+}
+
+.dot, .dot2, h3, h5 {
+  text-align: center;
 }
 
 h1 {
@@ -82,14 +86,15 @@ h1 span {
   border-bottom: 5px solid #4702cc;
 }
 
-h1, h2, #instructions li {
+h1, h2, #instructions li, h5 {
   letter-spacing: 2px;
 }
 
 h2 {
   font-size: 25px;
+  margin-top: 10px;
   margin-left: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 #start section, #history section, .concept {
@@ -103,7 +108,7 @@ h2 {
   margin-top: 30px;
   margin-left: 30px;
   padding: 10px;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 #instructions li:first-child {
@@ -159,7 +164,6 @@ h4 {
   display: inline-block;
   padding: 10px 10px 5px 10px;
   color: #dd5475;
-  text-align: center;
   width: 30px;
 }
 
@@ -173,18 +177,18 @@ h3 {
   top: 10px;
   width: 60%;
   font-size: 25px;
-  text-align: center;
 }
 
-p {
+p, .text {
   font-size: 14px;
 }
 
 .concept p {
   margin-left: 30px;
+  margin-bottom: 20px;
 }
 
-.container p {
+.container .text {
   float:left;
   position: absolute;
   bottom: 0px;
@@ -207,8 +211,12 @@ figure img {
 
 a {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 0px;
+  right: 0px;
+}
+
+.concept p > a {
+  position: static;
 }
 
 .nextButton, .nextSlides {
@@ -219,4 +227,23 @@ a {
 
 .nextButton:hover, .nextSlides:hover {
   border: 2px solid #ffffff;
+}
+
+.text ol {
+  list-style-type: lower-alpha;
+}
+
+.text li {
+  margin-left: 30px;
+}
+
+.text li:nth-child(2), .text li:nth-child(3) {
+  margin-top: 10px;
+}
+
+h5 {
+  position: absolute;
+  top: -45px;
+  left: 0px;
+  font-size: 15px;
 }
