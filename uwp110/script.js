@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     /////////////////////////////////////////////////////////////////////////////
 
-
+    //KEYBOARDS
     function imageSlider () {
     document.getElementById('prev').onclick = function() {plusSlides(-1)};
     document.getElementById('next').onclick = function() {plusSlides(1)};
@@ -94,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.getElementsByClassName('dot')[0].onclick = function() {currentSlide(1)};
     document.getElementsByClassName('dot')[1].onclick = function() {currentSlide(2)};
     document.getElementsByClassName('dot')[2].onclick = function() {currentSlide(3)};
+    document.getElementsByClassName('dot')[3].onclick = function() {currentSlide(4)};
 
     //defined the value of slideIndex
     var slideIndex = 1;
@@ -134,12 +135,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 } //end of imageSlider function
 
 
+//HISTORY
 function imageSlider2 () {
 document.getElementById('prev2').onclick = function() {plusSlides2(-1)};
 document.getElementById('next2').onclick = function() {plusSlides2(1)};
 
 document.getElementsByClassName('dot2')[0].onclick = function() {currentSlide2(1)};
 document.getElementsByClassName('dot2')[1].onclick = function() {currentSlide2(2)};
+document.getElementsByClassName('dot2')[2].onclick = function() {currentSlide2(3)};
 
 //defined the value of slideIndex
 var slideIndex2 = 1;

@@ -23,7 +23,7 @@ ul {
 nav {
   position: relative;
   padding: 10px 12px;
-  width: 110px;
+  width: 150px;
   top: 145px;
   left: 74%;
   border-radius: 5px;
@@ -112,7 +112,7 @@ h2 {
 }
 
 #instructions li:first-child {
-  margin-top: 70px;
+  margin-top: 45px;
 }
 
 #instructions li:hover {
@@ -150,7 +150,7 @@ h2 {
 
 
 .steps, .steps2 {
-  width: 200px;
+  width: 250px;
   margin-top: 30px;
 }
 
@@ -164,7 +164,6 @@ h4 {
   display: inline-block;
   padding: 10px 10px 5px 10px;
   color: #dd5475;
-  width: 30px;
 }
 
 .active, .dot:hover, .dot2:hover {
@@ -183,16 +182,17 @@ p, .text {
   font-size: 14px;
 }
 
-.concept p {
+#instructions p, .concept p {
   margin-left: 30px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .container .text {
   float:left;
   position: absolute;
   bottom: 0px;
-  left: 3%;
+  left: 2%;
   height: 80%;
   width: 55%;
   /*border:1px solid yellow;*/
@@ -207,6 +207,16 @@ figure img {
   height: 310px;
   position: absolute;
   right: 0px;
+}
+
+.done {
+  text-align: center;
+  width: 100%;
+}
+
+.done + .text {
+  width: 400px;
+  margin-left: 70px;
 }
 
 a {
