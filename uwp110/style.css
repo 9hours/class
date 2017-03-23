@@ -12,21 +12,14 @@ body{
   /*font-family: 'Roboto', sans-serif;*/
   font-family: 'Montserrat', sans-serif;
 
-  background: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
-  color: #4702cc;
+  background: linear-gradient(to right, #667EEA 0%, #764BA2 100%);
+
+  color: #2c048c;
+  letter-spacing: 1px;
 }
 
 ul {
   list-style: none;
-}
-
-nav {
-  position: relative;
-  padding: 10px 12px;
-  width: 150px;
-  top: 145px;
-  left: 74%;
-  border-radius: 5px;
 }
 
 nav li, #instructions li, #prev, #next, #prev2, #next2, .steps, .steps2, a {
@@ -39,19 +32,28 @@ nav li:hover, #instructions li:hover, #prev, #next, #prev2, #next2, #prev:hover,
   color: #ffffff;
 }
 
+nav {
+  position: relative;
+  padding: 10px 12px;
+  width: 150px;
+  top: 100px;
+  left: 615px;
+  border-radius: 5px;
+}
+
 main {
+  position: relative;
+  top: 40px;
   height: 350px;
   width: 600px;
   margin:auto;
-  position: relative;
-  top: 40px;
 }
 
 article {
   height: 100%;
   width: 100%;
-  background-color: #fd868c;
-  box-shadow: 0px 10px 15px #ad2747;
+  background-color: #667EEA;
+  box-shadow: 0px 10px 15px #3B09A8;
   border-radius: 5px;
   padding: 20px;
   position: absolute;
@@ -83,7 +85,7 @@ h1 {
 }
 
 h1 span {
-  border-bottom: 5px solid #4702cc;
+  border-bottom: 5px solid #ffffff;
 }
 
 h1, h2, #instructions li, h5 {
@@ -100,7 +102,7 @@ h2 {
 #start section, #history section, .concept {
   width: calc(100% - 40px);
   height: calc(100% - 40px);
-  background-color: #fd868c;
+  background-color: #667EEA;
   position: absolute;
 }
 
@@ -129,7 +131,7 @@ h2 {
 .container > div {
   height: 100%;
   width:100%;
-  background-color:#fd868c;
+  background-color:#667EEA;
 }
 
 #prev, #next, #prev2, #next2 {
@@ -163,39 +165,45 @@ h4 {
 .dot, .dot2 {
   display: inline-block;
   padding: 10px 10px 5px 10px;
-  color: #dd5475;
+  color: #3939b5;
 }
 
 .active, .dot:hover, .dot2:hover {
-  border-bottom: 3px solid #4702cc;
-  color: #4702cc;
+  border-bottom: 3px solid #2c048c;
+  color: #2c048c;
 }
 
 h3 {
   position: absolute;
   top: 10px;
+  right: 2%;
   width: 60%;
   font-size: 25px;
 }
 
 p, .text {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 #instructions p, .concept p {
   margin-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-right: 20px;
 }
 
 .container .text {
-  float:left;
+  float: right;
   position: absolute;
   bottom: 0px;
-  left: 2%;
+  right: 2%;
   height: 80%;
   width: 55%;
   /*border:1px solid yellow;*/
+}
+
+.container .done + .text {
+  float:left;
+  left: 2%;
 }
 
 .container figure {
@@ -206,7 +214,7 @@ p, .text {
 figure img {
   height: 310px;
   position: absolute;
-  right: 0px;
+  left: 0px;
 }
 
 .done {
@@ -231,7 +239,7 @@ a {
 
 .nextButton, .nextSlides {
   padding: 5px 10px;
-  border: 2px solid #fd868c;
+  border: 2px solid #667EEA;
   border-radius: 5px;
 }
 

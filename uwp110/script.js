@@ -61,9 +61,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
       instructions.style.display = 'block';
     });
 
-    nextButton[2].addEventListener('click', function(){
+    /*nextButton[2].addEventListener('click', function(){
       concept[3].style.display = 'block';
-    });
+    });*/
 
     ///
 
