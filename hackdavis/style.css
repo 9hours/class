@@ -1,0 +1,125 @@
+/* HACKDAVIS CSS */
+body {
+    padding:0px;
+    margin:0px;
+    background-color:#fff;
+    font-family:'Montserrat';
+}
+
+header, footer{
+    text-align:center;
+    width:100%;
+    background-color:#8cd4cb;
+    color:#ffffff;
+}
+
+header {
+    padding:100px 0px;
+}
+
+header h1 {
+    font-family:'Bangers';
+    font-size:57pt;
+    letter-spacing:4pt;
+}
+
+.desc {
+    font-size:12pt;
+    display:block;
+    margin-top:-45px;
+    padding-bottom:45px;
+}
+
+table {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    margin-bottom:100px;
+    /*border:1px solid #000;*/
+}
+
+tr {
+}
+
+td {
+    /*border:1px solid #000;*/
+    text-align:center;
+    padding:15px 20px 20px 15px;
+}
+
+td h1 {
+    font-family:'Bangers';
+    font-size:30pt;
+    display:block;
+    padding-top:50px;
+    letter-spacing:2pt;
+}
+
+.container{
+    width:400px;
+    overflow:hidden;
+}
+
+.fit {
+    width:400px;
+    height:400px;
+    margin:auto;
+    background:#fff;
+    /*linear-gradient(to bottom, rgba(0,255,0,1), rgba(255,0,0,1));*/
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition:all ease-in-out 0.7s;
+}
+
+.fit img {
+    width:400px;
+    opacity:1;
+    transition:all ease-in-out 0.7s;
+    border: 1px solid #dedede;
+    position:relative;
+}
+
+#break {
+    height:50px;
+}
+
+footer{
+    margin:0px;
+    padding:50px 0px;
+}
+
+/*BACK TO TOP*/
+
+.scrollToTop{
+font-family:'Bangers';
+background:rgba(0,0,0,0);
+padding:10px;
+padding-top:6px;
+padding-bottom:6px;
+color: #3e3e3e;
+text-decoration: none;
+letter-spacing:2pt;
+position:fixed;
+bottom:25px;
+right:30px;
+display:none;
+text-transform:uppercase;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+-ms-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+z-index: 999;
+}
+
+.scrollToTop:hover{
+color:#000;
+text-decoration:none;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+-ms-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+}

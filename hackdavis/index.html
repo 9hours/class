@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- TITLE -->
+  <title>HackDavis Countdown Ads</title>
+
+  <!-- CSS STYLESHEET -->
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+  <!-- SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      //Check to see if the window is top if not then display button
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+          $('.scrollToTop').fadeIn();
+        } else {
+          $('.scrollToTop').fadeOut();
+        }
+      });
+
+      //Click event to scroll to top
+      $('.scrollToTop').click(function() {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 800);
+        return false;
+      });
+
+    });
+  </script>
+
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Bangers);
+    @import url(https://fonts.googleapis.com/css?family=Montserrat);
+  </style>
+</head>
+
+<body>
+  <a href="#" class="scrollToTop">back to top</a>
+  <header>
+    <h1>HackDavis Countdown ADs</h1>
+    <div class="desc">
+      <p>for twitter, instagram, and facebook</p>
+      <p>the first four ads followed the same template while the last week consisted of one short gif each day</p>
+    </div>
+  </header>
+
+  <table>
+    <tr>
+      <td class="container">
+        <div class="fit">
+          <img src="images/countdown_45days-small.png">
+        </div>
+      </td>
+
+      <td class="container">
+        <div class="fit">
+          <img src="images/countdown_30days-small.png">
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="container">
+        <div class="fit">
+          <img src="images/countdown_21days-small.png">
+        </div>
+      </td>
+      <td class="container">
+        <div class="fit">
+          <img src="images/countdown_14days-small.png">
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" id="break">
+        <h1>1 week of gifs</h1>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="container">
+        <div class="fit">
+          <img src="images/countdown-7days-med.gif">
+        </div>
+      </td>
+      <td class="container">
+        <div class="fit">
+          <img src="images/countdown-6days-small.gif">
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="container">
+        <div class="fit">
+          <img src="images/countdown-5days-small.gif">
+        </div>
+      </td>
+      <td class="container">
+        <div class="fit">
+          <img src="images/countdown_4days-small.gif">
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="container">
+        <div class="fit">
+          <img src="images/countdown-3days-small.gif">
+        </div>
+      </td>
+      <td class="container">
+        <div class="fit">
+          <img src="images/countdown-2days-small.gif">
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="container" colspan="2">
+        <div class="fit">
+          <img src="images/countdown-12HOURS-small.gif">
+        </div>
+      </td>
+    </tr>
+
+  </table>
+
+  <footer>
+    <p>thanks for stopping by!</p>
+    <p>- anh lam</p>
+  </footer>
+</body>
+
+</html>
